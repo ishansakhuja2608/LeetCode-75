@@ -1,8 +1,8 @@
 class Solution {
     public int maxProduct(int[] nums) {
         int res = nums[0];
-        int imax = nums[0];
-        int imin = nums[0];
+        int imax = nums[0]; // stores the max prod till nums[i]
+        int imin = nums[0]; // stores the min prod till nums[i]
         
         for(int i = 1; i < nums.length; i++) {
             // big number multiplied by neg, makes it smaller and VV, therefore we swap both
